@@ -1,10 +1,10 @@
-const numeroSecreto = 5;
+const numeroSecreto = parseInt(Math.random() * 10 + 1);
 let tentativas = 2;
 
 while (tentativas > 0) {
    chute = parseInt(prompt('Chute um numero entre 0 a 10\n'));
 
-if (chute == 5) {
+if (chute == numeroSecreto) {
    alert('Parabens você acertou!')
    break;
 } else {
